@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 10px 10px;
+}
+@media (min-width: 992px) {
+  .container {
+    width: 85%;
+    padding: 50px 0 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+}
+.app-tittle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.add-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  padding: 10px 50px;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: #066ddb;
+}
+.tasks-container {
+  margin-top: 30px;
+}
+.tasks-container-tittle {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.tasks-list {
+  padding-right: 10px;
+  list-style: none;
+  margin-top: 15px;
+  max-height: 650px;
+  overflow-y: scroll;
+}
+.tasks-list::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.tasks-list::-webkit-scrollbar-track {
+  background: #ffffff; /* color of the tracking area */
+}
+
+.tasks-list::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #ffffff; /* creates padding around scroll thumb */
+}
+.add-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.add-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.open-form-container {
+  z-index: 1;
+  opacity: 1;
+}
+.close-form-container {
+  z-index: -1;
+  opacity: 0;
+}
+.footer {
+  text-align: center;
+  margin: 13px;
+}
